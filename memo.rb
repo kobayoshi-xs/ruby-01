@@ -5,7 +5,7 @@ memo_type = gets
 
 if memo_type.to_i == 1
   p "拡張子を除いたファイルを入力して下さい"
-  memo_type2 = gets
+  memo_type2 = gets.chomp
    p "メモしたい内容を記入して下さい"
    p "終了したらCtrl + Dを押して下さい"
   memo_type3 = $stdin.read
