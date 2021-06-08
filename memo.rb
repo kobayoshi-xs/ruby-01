@@ -12,7 +12,6 @@ if memo_type.to_i == 1
   CSV.open("#{memo_type2}.csv", "w") do |csv|
     csv << ["#{memo_type3}"]
   end
-end
 elsif memo_type.to_i == 2
   p "編集を行うファイル名を入力して下さい"
   memo_type4 = gets
