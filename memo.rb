@@ -14,7 +14,7 @@ if memo_type.to_i == 1
   end
 elsif memo_type.to_i == 2
   p "編集を行うファイル名を入力して下さい"
-  memo_type4 = gets
+  memo_type4 = gets.chomp
   CSV.foreach("#{memo_type4}.csv") do |row|
     p row
   end
